@@ -17,13 +17,13 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 import django_on_heroku
-django_on_heroku.settings(locals())
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-b-p@#ja20y3-h5$j$__3pmce2+%nzm)bes)&e3w0x(@8*tb06q'
+# SECRET_KEY = 'django-insecure-b-p@#ja20y3-h5$j$__3pmce2+%nzm)bes)&e3w0x(@8*tb06q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -138,3 +138,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+django_on_heroku.settings(locals())
